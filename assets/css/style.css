@@ -23,12 +23,14 @@ body{
     top: 0;
     left: 0;
     z-index: 100; /* Define a ordem de sobreposição (se necessário) */
+    border-bottom: #0199dc 3px solid;
 }
 header {
     
     max-width: 2200px; 
     width: 80%;
     margin: auto; /* Centraliza o cabeçalho horizontalmente */
+   
     
 }
 

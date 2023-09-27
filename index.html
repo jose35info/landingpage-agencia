@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Grupo Viviane Aguiar</title>
+  </head>
+  <body>
+    <!-- Cabeçalho (Header) -->
+    <div class="wapper">
+    <header>
+      <nav class="nav-bar">
+        <!-- Logotipo e Nome da Agência -->
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="logo" />
+          <h1>Agência Viviane Aguiar</h1>
+        </div>
+        <!-- Lista de Navegação Principal (Desktop) -->
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servico" class="nav-link">Nossos serviços</a>
+            </li>
+            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+          </ul>
+        </div>
+        <!-- Ícone do Menu Mobile -->
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/img/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <!-- Menu Mobile (quando ativado) -->
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#servico" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+    <!-- Conteúdo Principal (Main) -->
+    <main>
+      <!-- Slider de Imagens -->
+      <div id="slider">
+        <img
+          src="./assets/img/carrossel/Curso de cuidador (1).png"
+          alt="babá"
+          class="selected"
+        />
+        <img
+          src="./assets/img/carrossel/CURSO-BABA.png"
+          alt="serviços gerais"
+        />
+        <img
+          src="./assets/img/carrossel/banner-03.png"
+          alt="reparos"
+        />
+        <!-- Div com classe 'wapper' parece desnecessária e pode ser removida -->
+      </div>
+      <!-- Seção de Serviços -->
+      <section class="serviços" id="servico">
+        <h2 class="title-container">Nossos serviços</h2>
+        <p class="sub-title-serviços">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+        </p>
+        <div class="box-container" id="cards-container">
+          <!-- Card 1 -->
+          <article class="container">
+            <img src="./assets/img/serviços/52068.jpg" alt="" />
+            <p class="descricao-serviços">
+              Contrate uma Babá
+            </p>
+          </article>
+          <!-- Card 2 -->
+          <article class="container">
+            <img
+              src="./assets/img/serviços/parte-do-trabalhador-da-construcao-civil-com-cinto-de-ferramentas.jpg"
+              alt="babá levando carrinho de bebê"
+            />
+            <p class="descricao-serviços">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laudantium, repudiandae?
+            </p>
+          </article>
+          <!-- Card 3 -->
+          <article class="container">
+            <img
+              src="./assets/img/serviços/bebe-fofo-indo-para-seus-primeiros-passos.jpg"
+              alt="serviços gerais"
+            />
+            <p class="descricao-serviços">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At,
+              accusamus.
+            </p>
+          </article>
+          <!-- Card 4 -->
+          <article class="container">
+            <img
+              src="./assets/img/serviços/governanta-segurando-uma-garrafa-com-um-liquido-mais-limpo-nas-maos.jpg"
+              alt=""
+            />
+            <p class="descricao-serviços">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+              quia?
+            </p>
+          </article>
+        </div>
+        <a href="#" class="bnt-contato">Contato</a>
+        <!-- Botão para trocar os cards está comentado -->
+        <!-- <button onclick="trocarCards()">Trocar Cards</button> -->
+      </section>
+      <!-- Seção "Sobre Nós" -->
+      <!-- <section class="about">
+        <div class="box-about">
+          <h3 class="about-title">Sobre Nós</h3>
+        </div>
+        <img
+          class="imagem-about"
+          src="./assets/img/sobre_nos/sobre-nos.jpg"
+          alt=""
+        />
+      </section> -->
+      <!-- Seção de Descrição -->
+      <section class="descricao" id="sobre">
+        <!-- Imagem -->
+        <article class="imagem">
+          <div class="elementor-section-imagem">
+            <img class="img-sobre"
+              src="./assets/img/sobre_nos/descrição.png"
+              alt=""
+            />
+            <p>Viviane Aguiar</p>
+          </div>
+        </article>
+        <!-- Texto -->
+        <article class="text">
+          <div class="elementor-text">
+            <h4 class="title-descricao">Sobre mim</h4>
+            <p class="sub-title-descricao">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              maiores consectetur recusandae? Porro quae fuga harum temporibus
+              maxime illo esse?
+            </p>
+            <p class="sub-title-descricao">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              maiores consectetur recusandae? Porro quae fuga harum temporibus
+              maxime illo esse?
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- Script JavaScript (suponho que esteja em "assets/js/script.js") -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -2,21 +2,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Geologica:wght@100;200;300;400;600&family=Inter:wght@100;200;400&family=Italiana&family=Lobster&family=Roboto:wght@300&display=swap');
 
 /* Reset de estilos e configurações globais */
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%; /* Define um tamanho de fonte base para facilitar cálculos em rem */
 }
-body{
+body {
     background-image: url(/assets/img/backgroud/Fundo-branco.jpg);
     background-repeat: repeat;
     background-size: 300px;
 }
 
+/* Redes Sociais */
+.redes-socias {
+    background-color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* Adicione um valor para a propriedade 'top' aqui, por exemplo, top: 0; */
+}
+
+/* Redes Sociais - Ícones */
+.redes-socias ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.redes-socias a {
+    font-size: 2rem;
+}
+
+/* Redes Sociais - Ícone Instagram */
+.instagram {
+    width: 2.5rem;
+}
+
+/* Redes Sociais - Ícone Facebook */
+.facebook {
+    width: 2.5rem;
+}
+.whatsapp{
+    width: 2.5rem;
+
+}
+
+/* Wrapper para ícones de redes sociais */
+.wapper-icon {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 1rem;
+    align-items: center;
+   justify-content: end; 
+    /* Evite usar porcentagem para a margem esquerda (left), pois pode não funcionar como esperado */
+}
+
 /* Cabeçalho (Header) */
-.wapper{
+.wapper {
     background-color: #212371; /* Cor de fundo do cabeçalho */
     width: 100%;
     position: sticky; /* Fixa o cabeçalho no topo da tela */
@@ -25,13 +72,11 @@ body{
     z-index: 100; /* Define a ordem de sobreposição (se necessário) */
     border-bottom: #0199dc 3px solid;
 }
+
 header {
-    
-    max-width: 2200px; 
+    max-width: 2200px;
     width: 80%;
     margin: auto; /* Centraliza o cabeçalho horizontalmente */
-   
-    
 }
 
 /* Barra de Navegação */
@@ -57,7 +102,8 @@ header {
 
 /* Estilo para a imagem do logotipo */
 .logo > img {
-    border-radius: 5rem; /* Adiciona um arredondamento à imagem */
+    border-radius: 10rem; /* Adiciona um arredondamento à imagem */
+    width: 12rem;
 }
 
 /* Lista de Navegação */
@@ -84,15 +130,15 @@ header {
     font-size: 2.5rem;
     color: #fff;
     font-weight: 400;
-    padding: 1rem 1rem;
-    
-    /* font-size: 2.5rem; */ /* Parece haver uma duplicação desta propriedade */
+    padding: 1rem 1rem; /* Redundante com a propriedade anterior, você pode remover uma delas */
 }
-.nav-link:hover{
+
+/* Estilo do link de navegação no hover */
+.nav-link:hover {
     padding: 1rem 1rem;
     background-color: #ffde59;
     border-radius: 1.5rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
     color: #212371;
 }
 
@@ -124,7 +170,6 @@ header {
 
 /* Seção Principal */
 main {
-   
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -165,7 +210,6 @@ img:hover {
     width: 80%;
     margin: auto;
     padding: 15rem 0;
-
 }
 
 /* Título da Seção de Serviços */
@@ -317,10 +361,7 @@ img:hover {
 }
 
 /* Media Query para telas pequenas (Mobile) */
-
 /* Ajuste de estilos para telas pequenas aqui */
-
-
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -360,6 +401,3 @@ img:hover {
         display: block;
     }
 }
-
-
-/*** J.A ***/

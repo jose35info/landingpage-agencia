@@ -213,8 +213,9 @@ img:hover {
 }
 
 /* Título da Seção de Serviços */
-.serviços h2 {
+.serviços h2,h3,h4 {
     font-size: 4rem;
+    line-height: 5.6rem;
     font-weight: 700;
     color: #212371;
     text-align: center;
@@ -266,11 +267,12 @@ img:hover {
 
 /* Botão de Contato */
 .bnt-contato {
-    background-color: #ffb1b0;
+    background-color: #4bf009;
     padding: 1rem 4rem;
-    display: block;
-    width: 10%;
-    margin: auto;
+    display: inline-block;
+    width: 20%;
+    max-width: 150px;
+    margin:1.5rem auto;
     text-align: center;
     margin-top: 2rem;
     border-radius: 5px;
@@ -313,7 +315,7 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 80%;
     max-width: 1922px;
     padding: 15rem;
@@ -358,7 +360,61 @@ img:hover {
 
 .elementor-text {
     padding: 3rem;
+    background-color: #5ce2fd;
+    border-radius: 50px 0 50px 0;
 }
+/* Depoimentos */
+
+  
+.depoinment{
+    width: 80%;
+    margin: auto;
+    max-width: 1922px;
+    padding: 15rem;
+    
+}
+    .flex-depoimento{
+        display: flex;
+        flex-wrap: wrap;
+    }
+.box{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #212371; */
+    padding: 2rem;
+    margin-top: 2rem;
+    flex: 1 0 350px;
+    max-width: 450px;
+    gap: 25px;
+}
+.customer-image{
+    border-radius: 50%;
+    width: 100%;
+}
+.customer-name{
+    font-size: 2.5rem;
+    
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #007acc;
+    margin: 20px 0;
+}
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .box footer{text-align: right
+};
+  .customer-name{
+    font-weight: bold;
+  }
 
 /* Media Query para telas pequenas (Mobile) */
 /* Ajuste de estilos para telas pequenas aqui */

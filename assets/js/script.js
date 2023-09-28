@@ -59,3 +59,7 @@ const intervaloDeTempo = 5000; // Tempo em milissegundos (5 segundos neste caso)
 // // Configura um temporizador para trocar os cards automaticamente
 // setInterval(trocarParaProximoCard, intervaloDeTempo);
 
+// seção meus depoimentos//
+// Função para verificar se a seção está visível
+
+  
